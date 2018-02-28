@@ -1,0 +1,64 @@
+CREATE DATABASE pims default character set gbk;
+
+USE pims;
+
+
+
+mysql> CREATE TABLE user(
+    -> userid INT(100) AUTO_INCREMENT PRIMARY KEY,
+    -> username VARCHAR(100),
+    -> password VARCHAR(100),
+    -> name VARCHAR(100),
+    -> sex VARCHAR(10),
+    -> year VARCHAR(10),
+    -> mounth VARCHAR(10)
+    -> )ENGINE=InnoDB DEFAULT CHARSET=GBK;
+    
+    
+    
+mysql> CREATE TABLE address(
+    -> addressid int(10) AUTO_INCREMENT PRIMARY KEY,
+    -> addressname varchar(100),
+    -> telephone varchar(100),
+    -> address varchar(100),
+    -> city varchar(100),
+    -> other varchar(100),
+    -> userid int(10),
+    -> foreign key(userid) references user(userid) on delete cascade on update cascade);
+    
+    
+    
+mysql> CREATE TABLE memo(
+    -> momeid int(10) AUTO_INCREMENT PRIMARY KEY,
+    -> time varchar(50),
+    -> memo varchar(100),
+    -> place varchar(20),
+    -> userid int(10),
+    -> foreign key(userid) references user(userid) on delete cascade on update cascade);
+    
+    
+    mysql> CREATE TABLE diary(
+    -> diaryid int(10) auto_increment primary key,
+    -> time varchar(50),
+    -> place varchar(100),
+    -> detail varchar(200),
+    -> people varchar(100),
+    -> userid int(10),
+    -> foreign key(userid) references user(userid) on delete cascade on update cascade);
+    
+mysql>  CREATE TABLE expense(
+    -> expenseid int(10) auto_increment primary key,,
+    -> time varchar(50),
+    -> item varchar(100),
+    -> money int(20),
+    -> userid int(10),
+    -> foreign key(userid) references user(userid) on delete cascade on update cascade);
+    
+
+mysql>  CREATE TABLE income(
+    -> incomeid int(10) auto_increment primary key,,
+    -> time varchar(50),
+    -> item varchar(100),
+    -> money int(20),
+    -> userid int(10),
+    -> foreign key(userid) references user(userid) on delete cascade on update cascade);

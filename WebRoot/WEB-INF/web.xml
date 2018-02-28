@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0"
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <filter>
+        <filter-name>characterEncodingFilter</filter-name>
+        <filter-class>filter.CharacterEncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>characterEncodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>servlet.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>EditUserServlet</servlet-name>
+    <servlet-class>servlet.EditUserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>EditUserDatabaseServlet</servlet-name>
+    <servlet-class>servlet.EditUserDatabaseServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddressServlet</servlet-name>
+    <servlet-class>servlet.AddressServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>InformationServlet</servlet-name>
+    <servlet-class>servlet.InformationServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddressInformationServlet</servlet-name>
+    <servlet-class>servlet.AddressInformationServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddAddressServlet</servlet-name>
+    <servlet-class>servlet.AddAddressServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteAddressServlet</servlet-name>
+    <servlet-class>servlet.DeleteAddressServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>EditAddressDatabaseServlet</servlet-name>
+    <servlet-class>servlet.EditAddressDatabaseServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MemoInformationServlet</servlet-name>
+    <servlet-class>servlet.MemoInformationServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddMemoServlet</servlet-name>
+    <servlet-class>servlet.AddMemoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteMemoServlet</servlet-name>
+    <servlet-class>servlet.DeleteMemoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddDiaryServlet</servlet-name>
+    <servlet-class>servlet.AddDiaryServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DiaryInformationServlet</servlet-name>
+    <servlet-class>servlet.DiaryInformationServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>EditMemoDatabaseServlet</servlet-name>
+    <servlet-class>servlet.EditMemoDatabaseServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>EditDiaryDatabaseServlet</servlet-name>
+    <servlet-class>servlet.EditDiaryDatabaseServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteDiaryServlet</servlet-name>
+    <servlet-class>servlet.DeleteDiaryServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SelectAddressServlet</servlet-name>
+    <servlet-class>servlet.SelectAddressServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>EditAddressServlet</servlet-name>
+    <servlet-class>servlet.EditAddressServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SelectMemoServlet</servlet-name>
+    <servlet-class>servlet.SelectMemoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>EditMemoServlet</servlet-name>
+    <servlet-class>servlet.EditMemoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SelectDiaryServlet</servlet-name>
+    <servlet-class>servlet.SelectDiaryServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>EditDiaryServlet</servlet-name>
+    <servlet-class>servlet.EditDiaryServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FinanceInformationServlet</servlet-name>
+    <servlet-class>servlet.FinanceInformationServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddIncomeServlet</servlet-name>
+    <servlet-class>servlet.AddIncomeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>EditIncomeServlet</servlet-name>
+    <servlet-class>servlet.EditIncomeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>EditIncomeDatabaseServlet</servlet-name>
+    <servlet-class>servlet.EditIncomeDatabaseServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>EditExpenseServlet</servlet-name>
+    <servlet-class>servlet.EditExpenseServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>EditExpenseDatabaseServlet</servlet-name>
+    <servlet-class>servlet.EditExpenseDatabaseServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteExpenseServlet</servlet-name>
+    <servlet-class>servlet.DeleteExpenseServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteIncomeServlet</servlet-name>
+    <servlet-class>servlet.DeleteIncomeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddExpenseServlet</servlet-name>
+    <servlet-class>servlet.AddExpenseServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/servlet/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/servlet/RegisterServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EditUserServlet</servlet-name>
+    <url-pattern>/servlet/EditUserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EditUserDatabaseServlet</servlet-name>
+    <url-pattern>/servlet/EditUserDatabaseServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddressServlet</servlet-name>
+    <url-pattern>/servlet/AddressServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InformationServlet</servlet-name>
+    <url-pattern>/servlet/InformationServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddressInformationServlet</servlet-name>
+    <url-pattern>/servlet/AddressInformationServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddAddressServlet</servlet-name>
+    <url-pattern>/servlet/AddAddressServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteAddressServlet</servlet-name>
+    <url-pattern>/servlet/DeleteAddressServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EditAddressDatabaseServlet</servlet-name>
+    <url-pattern>/servlet/EditAddressDatabaseServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MemoInformationServlet</servlet-name>
+    <url-pattern>/servlet/MemoInformationServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddMemoServlet</servlet-name>
+    <url-pattern>/servlet/AddMemoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteMemoServlet</servlet-name>
+    <url-pattern>/servlet/DeleteMemoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddDiaryServlet</servlet-name>
+    <url-pattern>/servlet/AddDiaryServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DiaryInformationServlet</servlet-name>
+    <url-pattern>/servlet/DiaryInformationServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EditMemoDatabaseServlet</servlet-name>
+    <url-pattern>/servlet/EditMemoDatabaseServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EditDiaryDatabaseServlet</servlet-name>
+    <url-pattern>/servlet/EditDiaryDatabaseServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteDiaryServlet</servlet-name>
+    <url-pattern>/servlet/DeleteDiaryServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectAddressServlet</servlet-name>
+    <url-pattern>/servlet/SelectAddressServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EditAddressServlet</servlet-name>
+    <url-pattern>/servlet/EditAddressServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectMemoServlet</servlet-name>
+    <url-pattern>/servlet/SelectMemoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EditMemoServlet</servlet-name>
+    <url-pattern>/servlet/EditMemoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectDiaryServlet</servlet-name>
+    <url-pattern>/servlet/SelectDiaryServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EditDiaryServlet</servlet-name>
+    <url-pattern>/servlet/EditDiaryServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FinanceInformationServlet</servlet-name>
+    <url-pattern>/servlet/FinanceInformationServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddIncomeServlet</servlet-name>
+    <url-pattern>/servlet/AddIncomeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EditIncomeServlet</servlet-name>
+    <url-pattern>/servlet/EditIncomeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EditIncomeDatabaseServlet</servlet-name>
+    <url-pattern>/servlet/EditIncomeDatabaseServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EditExpenseServlet</servlet-name>
+    <url-pattern>/servlet/EditExpenseServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EditExpenseDatabaseServlet</servlet-name>
+    <url-pattern>/servlet/EditExpenseDatabaseServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteExpenseServlet</servlet-name>
+    <url-pattern>/servlet/DeleteExpenseServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteIncomeServlet</servlet-name>
+    <url-pattern>/servlet/DeleteIncomeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddExpenseServlet</servlet-name>
+    <url-pattern>/servlet/AddExpenseServlet</url-pattern>
+  </servlet-mapping>
+  
+
+</web-app>
